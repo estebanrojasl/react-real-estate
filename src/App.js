@@ -1,11 +1,9 @@
+// import Header from "./components/Header";
+// import Visualization from "./components/Visualization";
+
 function App() {
-  return (
-    <div>
-      <header>
-        <h1>Hello world</h1>
-      </header>
-    </div>
-  );
+  return <div>{/* <Header />
+      <Visualization /> */}</div>;
 }
 
 export default App;
