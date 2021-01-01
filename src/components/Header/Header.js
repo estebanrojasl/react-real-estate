@@ -1,5 +1,9 @@
 function Header() {
-  return <h1>Header</h1>;
+  return (
+    <div className="header-div">
+      <img className="icon1" src="burger_bar.svg" alt="" />
+    </div>
+  );
 }
 
 export default Header;
