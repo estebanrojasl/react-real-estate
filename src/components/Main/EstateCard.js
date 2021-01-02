@@ -1,25 +1,29 @@
 import { useState, useEffect } from "react";
 
 function EstateCard() {
-  const [allEstates, setAllEstates] = useState();
+  const [allEstates, setAllEstates] = useState([]);
 
   useEffect(() => {
     fetch("https://mongo-real-estate.herokuapp.com/api/v1/acamica/estate")
-      // fetch("http://127.0.0.1:5500/api/v1/acamica/health")
       .then((response) => response.json())
       .then((response) => {
         console.log(response);
-        setAllEstates(response[0]._id);
+        setAllEstates(response);
       });
   }, []);
 
-  return (
-    <div>
-      <h1>EstateCard</h1>
-      <h2>{allEstates}</h2>
-      {/* <img src={allEstates} alt=""></img> */}
+  const estate = allEstates.map((estate) => (
+    <div key={estate._id}>
+      <img src="" alt="estate-pic" />
+      <p>Owner: {estate.owner}</p>
+      <p>Kind: {estate.kind}</p>
+      <p>Area: {estate.area}</p>
+      <p>Description: {estate.description}</p>
+      <br />
     </div>
-  );
+  ));
+
+  return <div>{estate}</div>;
 }
 
 export default EstateCard;

@@ -1,7 +1,9 @@
+import img from "./burger_bar.png";
+
 function Header() {
   return (
     <div className="header-div">
-      <img className="icon1" src="burger_bar.svg" alt="" />
+      <img className="icon1" src={img} alt="" />
     </div>
   );
 }

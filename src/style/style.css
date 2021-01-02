@@ -12,8 +12,9 @@ body {
   background-color: #d3d3d3;
 }
 
-.header-div nav .icon1 {
+.header-div .icon1 {
   margin: 0;
+  width: 2rem;
 }
 
 h1 {
