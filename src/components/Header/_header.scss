@@ -1,6 +1,30 @@
 .header-div {
-  .icon1 {
-    margin: 0;
-    width: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      margin: 0;
+      display: block;
+      padding: 1.5rem;
+      //padding: 2rem;
+    }
+    .menu {
+      height: 1rem;
+      //width: 1rem;
+    }
+    .logo {
+      width: 2.5rem;
+    }
+  }
+  .input-bar {
+    border: 1px solid #d3d3d3;
+    border-radius: 1rem;
+    margin: 0rem 3rem 2rem 3rem;
+    padding: 0.2rem;
   }
 }

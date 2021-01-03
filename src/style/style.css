@@ -12,11 +12,51 @@ body {
   background-color: #d3d3d3;
 }
 
-.header-div .icon1 {
+.header-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+}
+
+.header-div nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-div nav img {
   margin: 0;
-  width: 2rem;
+  display: block;
+  padding: 1.5rem;
+}
+
+.header-div nav .menu {
+  height: 1rem;
+}
+
+.header-div nav .logo {
+  width: 2.5rem;
+}
+
+.header-div .input-bar {
+  border: 1px solid #d3d3d3;
+  border-radius: 1rem;
+  margin: 0rem 3rem 2rem 3rem;
+  padding: 0.2rem;
 }
 
 h1 {
   color: aqua;
 }
+/*# sourceMappingURL=style.css.map */

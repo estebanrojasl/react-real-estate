@@ -1,9 +1,18 @@
-import img from "./burger_bar.png";
+import menu from "../assets/burger_bar.png";
+import logo from "../assets/logo.png";
 
 function Header() {
   return (
     <div className="header-div">
-      <img className="icon1" src={img} alt="" />
+      <nav className="">
+        <img className="menu" src={menu} alt="" />
+        <img className="logo" src={logo} alt="" />
+      </nav>
+      <input
+        className="input-bar"
+        type="text"
+        placeholder="  Search estate by id"
+      />
     </div>
   );
 }

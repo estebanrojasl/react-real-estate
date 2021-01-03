@@ -1,11 +1,9 @@
-import Header from "./components/Header/Header";
-import EstateCard from "./components/Main/EstateCard";
+import Header from "./components/header/Header";
+import EstateCard from "./components/main/EstateCard";
 
 function App() {
   return (
     <div>
-      <h1>Hello world</h1>
-
       <Header />
       <EstateCard />
     </div>
