@@ -14,7 +14,7 @@ function EstateCard() {
 
   const estate = allEstates.map((estate) => (
     <div key={estate._id}>
-      <img src="" alt="estate-pic" />
+      <img src={estate.photos} alt="estate-pic" />
       <p>Owner: {estate.owner}</p>
       <p>Kind: {estate.kind}</p>
       <p>Area: {estate.area}</p>
