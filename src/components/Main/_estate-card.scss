@@ -1,3 +1,16 @@
-h1 {
-  color: aqua;
+.cards-container {
+  overflow: scroll;
+  position: relative;
+  .card {
+    margin: 0.3rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.3rem #bbbbbb;
+    .photo {
+      width: 5rem;
+      image-rendering: auto;
+    }
+  }
 }

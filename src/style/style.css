@@ -21,6 +21,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
+  -webkit-box-shadow: 0rem 0rem 0.3rem #bbbbbb;
+          box-shadow: 0rem 0rem 0.3rem #bbbbbb;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header-div nav {
@@ -70,7 +76,23 @@ body {
   padding: 0.3rem;
 }
 
-h1 {
-  color: aqua;
+.cards-container {
+  overflow: scroll;
+  position: relative;
+}
+
+.cards-container .card {
+  margin: 0.3rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0rem 0rem 0.3rem #bbbbbb;
+          box-shadow: 0rem 0rem 0.3rem #bbbbbb;
+}
+
+.cards-container .card .photo {
+  width: 5rem;
+  image-rendering: auto;
 }
 /*# sourceMappingURL=style.css.map */
