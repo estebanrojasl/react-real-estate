@@ -95,4 +95,8 @@ body {
   width: 5rem;
   image-rendering: auto;
 }
+
+.cards-container .card p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
