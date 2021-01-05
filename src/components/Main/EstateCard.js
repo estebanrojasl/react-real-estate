@@ -1,19 +1,16 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { loadEstates } from "../redux/actions/loadEstates";
 
 function EstateCard() {
-  const [allEstates, setAllEstates] = useState([]);
-
+  const estatesArray = useSelector((state) => state);
+  const dispatch = useDispatch();
   useEffect(() => {
-    fetch("https://mongo-real-estate.herokuapp.com/api/v1/acamica/estate")
-      .then((response) => response.json())
-      .then((response) => {
-        console.log(response);
-        setAllEstates(response);
-      });
-  }, []);
+    dispatch(loadEstates());
+  }, [dispatch]);
 
-  const estate = allEstates.map((estate) => (
-    <div key={estate._id}>
+  const estates = estatesArray.map((estate) => (
+    <div key={estate.id}>
       <img src={estate.photos} alt="estate-pic" />
       <p>Owner: {estate.owner}</p>
       <p>Kind: {estate.kind}</p>
@@ -23,7 +20,7 @@ function EstateCard() {
     </div>
   ));
 
-  return <div>{estate}</div>;
+  return <div>{estates}</div>;
 }
 
 export default EstateCard;
